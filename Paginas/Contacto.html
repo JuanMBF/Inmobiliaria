@@ -6,6 +6,7 @@
     <title>Inmobiliaria</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+       
 </head>
 <body>
     <div id="contenedor">
@@ -15,6 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Paginas/Reservar.html">Reservar</a></li>
                     <li><a href="Mas info.html">Más info</a></li>
                     <li><a href="Contacto.html">Contacto</a></li>
                 </ul>
@@ -22,7 +24,7 @@
         </div>
         </header>
     </div>
-    <img src="https://grupoa2.com/wp-content/uploads/2022/12/IMG-20220429-WA0044-1024x768.jpg" class="imagen0">
+
     
     <div><table align="center">
         <th colspan="4">Horarios De Atención</th>
@@ -44,7 +46,7 @@
         </tr>
     </table> </div>
     <br>
-<div align="left">
+<div align="center">
     <h2>También puede completar el formulario para contactarnos sobre cualquier pregunta o comentario que tenga y nos contactaremos a la brevedad.</h2>
 </div>
     <form action="formulario" method="post" class="form0">
@@ -52,7 +54,19 @@
         <input type="email" placeholder="* Email" class="form1"> <br>
         <input type="text" placeholder="* Dirección" class="form1"> <br>
         <input type="number" placeholder="* Teléfono" class="form1"> <br>
-        <button type="submit" class="boton0"> Enviar</button>
+        <button id="enviarBtn" class="boton0" type="submit">Enviar</button>
     </form>
+    <script>
+        var botonEnviar = document.getElementById("enviarBtn");
+        botonEnviar.addEventListener("click", function() {
+        alert("¡Gracias por su mensaje! Nos contactaremos en la brevedad");
+        });
+    </script>
+    <br><br><br>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Inmobiliaria ZIC. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

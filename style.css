@@ -84,6 +84,7 @@ nav ul li a {
 .blabla {
     flex: 1;
     align-items: right;
+    font-style: inherit;
 }
 
 hr {
@@ -98,8 +99,55 @@ hr {
     margin: 30px;
 }
 
-/* Sobre mi */
+/* Mas info */
+.informacion {
+    padding: 40px;
+    background: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.informacion .container {
+    width: 90%;
+    margin: auto;
+}
+
+.informacion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #35424a;
+    font-size: 2em;
+}
+
+.informacion .intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.informacion .intro img {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.informacion h3 {
+    margin-top: 20px;
+    color: #e8491d;
+}
+
+.informacion p, .informacion ul {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.informacion ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
 .sd { 
     text-align: center;
     font-size: xl;
@@ -135,25 +183,26 @@ td:last-of-type {
 
 .imagen0 {
     float: right;
-    height:550px;
+    max-width: 20px;
 }
 
 .formulario {
     border-radius: 5px;
     box-sizing: border-box;
+    margin:0 auto;
 }
 
 .form0 {
-    max-width: 100%;
+    max-width: 12%;
+    margin:0 auto;
 }
 
 .form1 {
-    padding: 12px;
-    margin-bottom: 15px;
+    padding: 20px;
+    margin-bottom: 35px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    float: left;
     outline: none;
     border-color: #4CAF50;
 }
@@ -166,6 +215,52 @@ td:last-of-type {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    float: right;
-    width: 50%;
+    width: 108%;
+}
+
+/* Reservar */
+
+.propiedades, .sobre-nosotros, .contacto {
+    margin: 20px 0;
+    padding: 0px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.propiedades h2, .sobre-nosotros h2, .contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.propiedad {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.propiedad img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.propiedad h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+
+
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }

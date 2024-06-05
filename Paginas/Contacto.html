@@ -6,7 +6,9 @@
     <title>Inmobiliaria</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    
 </head>
 <body>
     <div id="contenedor">
@@ -26,30 +28,50 @@
     </div>
 
     
-    <div><table align="center">
-        <th colspan="4">Horarios De Atención</th>
-        <tr>
-            <th>Lunes </th>
-            <th> 08:00hs a 12:00hs </th>
-        </tr>
-        <tr>
-            <th>Martes</th>
-            <th> 10:00hs a 14:00hs </th>
-        </tr>
-        <tr>
-            <th>Miercoles</th>
-            <th> 12:00hs a 16:00hs </th>
-        </tr>
-        <tr>
-            <th>Jueves</th>
-            <th> 14:00hs a 18:00hs </th>
-        </tr>
-    </table> </div>
+    <div>
+        <table class="fila-resaltar">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario de Atención</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Cerrado</td>
+                </tr>
+            </tbody>
+        </table> </div>
     <br>
 <div align="center">
     <h2>También puede completar el formulario para contactarnos sobre cualquier pregunta o comentario que tenga y nos contactaremos a la brevedad.</h2>
 </div>
-    <form action="formulario" method="post" class="form0">
+    <form class="form0">
         <input type="text" placeholder="* Nombre y Apellido" class="form1"> <br>
         <input type="email" placeholder="* Email" class="form1"> <br>
         <input type="text" placeholder="* Dirección" class="form1"> <br>
@@ -68,5 +90,6 @@
             <p>&copy; 2024 Inmobiliaria ZIC. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

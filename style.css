@@ -31,7 +31,8 @@ nav {
     background-color: #6f21c8e8;
     color: #fff;
     padding: 10px;
-    text-align: center;
+    margin:-20px;
+    margin-top: 5px;
 }
 
 nav ul {
@@ -172,15 +173,22 @@ hr {
     height: auto; 
 }
 /* Contacto */
-
-th,td {
-    border: 3px solid #6f21c8e8
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.resaltado {
+    background-color: #4CAF50; 
 }
 
-td:last-of-type {
+th, td {
+    border: 1px solid #dddddd;
     text-align: center;
+    padding: 8px;
 }
-
+th {
+    background-color: #f2f2f2;
+}
 .imagen0 {
     float: right;
     max-width: 20px;
@@ -226,6 +234,7 @@ td:last-of-type {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .propiedades h2, .sobre-nosotros h2, .contacto h2 {
@@ -242,6 +251,7 @@ td:last-of-type {
     max-width: 50%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
 .propiedad h3 {
@@ -249,6 +259,9 @@ td:last-of-type {
     font-size: 24px;
 }
 
+.propiedad img.zoom {
+    transform: scale(1.2); 
+}
 
 
 footer {
